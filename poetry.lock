@@ -121,7 +121,7 @@ description = "misc for string"
 name = "texting"
 optional = false
 python-versions = ">=3.8,<4.0"
-version = "0.0.2"
+version = "0.0.3"
 
 [[package]]
 category = "main"
@@ -140,7 +140,7 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "d26b65cc6869d6c0e82059524cdc08ec33ea1712e51f368c67fe0fac8cf54ce4"
+content-hash = "f3f412a1f4b85fdda1f377bc7c0e36035b413dd87e78f6caca7dde169a857d1b"
 lock-version = "1.0"
 python-versions = "^3.8"
 
@@ -190,8 +190,8 @@ six = [
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 texting = [
-    {file = "texting-0.0.2-py3-none-any.whl", hash = "sha256:9a3ddb824f954e85ccb0ff9965cfe71d3535f3edbfb5bee16fe9f8773eb2f791"},
-    {file = "texting-0.0.2.tar.gz", hash = "sha256:dc5b815f3cba7fd43b1bdd296ba960c1d41cb04c2083ff74b039df5e2c56d378"},
+    {file = "texting-0.0.3-py3-none-any.whl", hash = "sha256:b4b32d43ae01897b9bdd04749ad581c3a27ac9a377c34610abf9f7e884e5748d"},
+    {file = "texting-0.0.3.tar.gz", hash = "sha256:84c39c5c980f09de11c98f7e3ebf5ce3439243678e8fdd6e1210156b9f1463b1"},
 ]
 veho = [
     {file = "veho-0.0.2-py3-none-any.whl", hash = "sha256:5adcfd8cf4e9908404b8e68c4410b0559abcbc64f8c13183bdd1bcdbee7aede6"},

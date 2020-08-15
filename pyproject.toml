@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "aryth"
-version = "0.0.1"
+version = "0.0.2"
 description = "numerical tools"
 authors = ["Hoyeung Wong <hoyeungw@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/hoyeungw/intype"
-repository = "https://github.com/hoyeungw/intype"
+homepage = "https://github.com/hoyeungw/aryth.git"
+repository = "https://github.com/hoyeungw/aryth.git"
 keywords = [
     "aryth", "numerical", "math", "statistics", "stat",
     "max", "min", "bound",
@@ -15,9 +15,9 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
-intype = "^0.0.2"
-veho = "^0.0.2"
-texting = "^0.0.2"
+intype = ">=0.0.2"
+veho = ">=0.0.2"
+texting = ">=0.0.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
