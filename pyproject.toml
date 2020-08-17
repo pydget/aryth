@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aryth"
-version = "0.0.3"
+version = "0.0.4"
 description = "numerical & statistics functions"
 authors = ["Hoyeung Wong <hoyeungw@outlook.com>"]
 license = "MIT"
@@ -16,7 +16,7 @@ keywords = [
 [tool.poetry.dependencies]
 python = "^3.8"
 intype = ">=0.0.2"
-veho = ">=0.0.3"
+veho = ">=0.0.4"
 texting = ">=0.0.2"
 
 [tool.poetry.dev-dependencies]

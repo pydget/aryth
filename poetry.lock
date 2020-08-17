@@ -146,7 +146,7 @@ description = "easy enumerate"
 name = "veho"
 optional = false
 python-versions = ">=3.8,<4.0"
-version = "0.0.3"
+version = "0.0.4"
 
 [metadata]
 content-hash = "480f0c54fef9de265d6386a885440e7328576db8f2d7f7cf0596b1b8917f0f17"
@@ -211,6 +211,6 @@ toml = [
     {file = "toml-0.10.1.tar.gz", hash = "sha256:926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f"},
 ]
 veho = [
-    {file = "veho-0.0.3-py3-none-any.whl", hash = "sha256:a00a51fa4600783d93cce19403f96b3c37d7c181ba34e5f4455380b7b601d85e"},
-    {file = "veho-0.0.3.tar.gz", hash = "sha256:d5e1eeeac81ff3d960d1e885b33b8de5bbcb4de8c148e8aadb9d6ef52fb36977"},
+    {file = "veho-0.0.4-py3-none-any.whl", hash = "sha256:44049086198860b91c9f61668448892aea33a00ca569004662637a2459bad500"},
+    {file = "veho-0.0.4.tar.gz", hash = "sha256:f135254264a3180152591f54ab65e0f575fc7a5e04471bd064deb0cdfdb5d389"},
 ]
