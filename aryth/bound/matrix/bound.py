@@ -24,6 +24,5 @@ def init_numeral(mx):
     i = j = 0
     for i, r in enumerate(mx):
         for j, x in enumerate(r):
-            if is_numeric(x):
-                return i, j, float(x)
+            if is_numeric(x): return i, j, float(x)
     return i + 1, j + 1, None
