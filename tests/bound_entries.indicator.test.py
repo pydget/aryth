@@ -1,4 +1,4 @@
-from aryth.bound_entries import max_by
+from aryth.bound.entries import max_by
 
 li = [
     (0, 'bern'),

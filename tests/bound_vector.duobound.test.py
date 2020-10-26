@@ -1,6 +1,6 @@
 from texting.chars import RT
 
-from aryth.bound_vector.duobound import duobound
+from aryth.bound.vector.duobound import duobound
 
 paramsList = {
     'one_zero': [0],

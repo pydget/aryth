@@ -1,6 +1,6 @@
 from texting.chars import RT
 
-from aryth.bound_matrix.duobound import duobound
+from aryth.bound.matrix.duobound import duobound
 
 paramsList = {
     'row': [[5, 7, 9, 10, 6]],

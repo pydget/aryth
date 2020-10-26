@@ -1,102 +1,166 @@
 [[package]]
-category = "dev"
-description = "Atomic file writes."
-marker = "sys_platform == \"win32\""
 name = "atomicwrites"
+version = "1.4.0"
+description = "Atomic file writes."
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.4.0"
 
 [[package]]
-category = "dev"
-description = "Classes Without Boilerplate"
 name = "attrs"
+version = "20.2.0"
+description = "Classes Without Boilerplate"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "20.2.0"
 
 [package.extras]
-dev = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "sphinx", "sphinx-rtd-theme", "pre-commit"]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface", "sphinx", "sphinx-rtd-theme", "pre-commit"]
 docs = ["sphinx", "sphinx-rtd-theme", "zope.interface"]
-tests = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
-tests_no_zope = ["coverage (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
 
 [[package]]
-category = "dev"
-description = "Cross-platform colored terminal text."
-marker = "sys_platform == \"win32\""
 name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "0.4.4"
 
 [[package]]
+name = "crostab"
+version = "0.0.8"
+description = "cross table analytical tool"
 category = "dev"
-description = "iniconfig: brain-dead simple config-ini parsing"
-name = "iniconfig"
-optional = false
-python-versions = "*"
-version = "1.0.1"
-
-[[package]]
-category = "main"
-description = "dynamic type infer"
-name = "intype"
 optional = false
 python-versions = ">=3.8,<4.0"
-version = "0.0.3"
+
+[package.dependencies]
+aryth = ">=0.0.6"
+ject = ">=0.0.2"
+veho = ">=0.0.4"
 
 [[package]]
+name = "foba"
+version = "0.0.7"
+description = "placeholder sample objects for test"
 category = "dev"
-description = "Core utilities for Python packages"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[package.dependencies]
+veho = ">=0.0.4"
+way = ">=0.0.1"
+
+[[package]]
+name = "iniconfig"
+version = "1.1.1"
+description = "iniconfig: brain-dead simple config-ini parsing"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "intype"
+version = "0.0.3"
+description = "dynamic type infer"
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[[package]]
+name = "ject"
+version = "0.0.3"
+description = "functional extensions"
+category = "dev"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[[package]]
 name = "packaging"
+version = "20.4"
+description = "Core utilities for Python packages"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "20.4"
 
 [package.dependencies]
 pyparsing = ">=2.0.2"
 six = "*"
 
 [[package]]
+name = "palett"
+version = "0.0.10"
+description = "pretty text for command line"
 category = "dev"
-description = "plugin and hook calling mechanisms for python"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[package.dependencies]
+aryth = ">=0.0.5"
+crostab = ">=0.0.6"
+intype = ">=0.0.2"
+ject = ">=0.0.1"
+pyspare = ">=0.0.6"
+veho = ">=0.0.7"
+
+[[package]]
 name = "pluggy"
+version = "0.13.1"
+description = "plugin and hook calling mechanisms for python"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "0.13.1"
 
 [package.extras]
 dev = ["pre-commit", "tox"]
 
 [[package]]
-category = "dev"
-description = "library with cross-python path, ini-parsing, io, code, log facilities"
 name = "py"
+version = "1.9.0"
+description = "library with cross-python path, ini-parsing, io, code, log facilities"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-version = "1.9.0"
 
 [[package]]
-category = "dev"
-description = "Python parsing module"
 name = "pyparsing"
+version = "2.4.7"
+description = "Python parsing module"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "2.4.7"
 
 [[package]]
+name = "pyspare"
+version = "0.0.7"
+description = "pretty print"
 category = "dev"
-description = "pytest: simple powerful testing with Python"
-name = "pytest"
 optional = false
-python-versions = ">=3.5"
-version = "6.1.1"
+python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
-atomicwrites = ">=1.0"
+aryth = ">=0.0.6"
+crostab = ">=0.0.5"
+intype = ">=0.0.2"
+ject = ">=0.0.3"
+palett = ">=0.0.4"
+texting = ">=0.0.9"
+veho = ">=0.0.4"
+
+[[package]]
+name = "pytest"
+version = "6.1.1"
+description = "pytest: simple powerful testing with Python"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+atomicwrites = {version = ">=1.0", markers = "sys_platform == \"win32\""}
 attrs = ">=17.4.0"
-colorama = "*"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
 iniconfig = "*"
 packaging = "*"
 pluggy = ">=0.12,<1.0"
@@ -108,41 +172,52 @@ checkqa_mypy = ["mypy (0.780)"]
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
 [[package]]
-category = "dev"
-description = "Python 2 and 3 compatibility utilities"
 name = "six"
+version = "1.15.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
-version = "1.15.0"
 
 [[package]]
-category = "main"
-description = "misc for string"
 name = "texting"
+version = "0.0.11"
+description = "misc for string"
+category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
-version = "0.0.10"
 
 [[package]]
-category = "dev"
-description = "Python Library for Tom's Obvious, Minimal Language"
 name = "toml"
+version = "0.10.1"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "dev"
 optional = false
 python-versions = "*"
-version = "0.10.1"
 
 [[package]]
-category = "main"
-description = "easy enumerate"
 name = "veho"
+version = "0.0.9"
+description = "easy enumerate"
+category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
-version = "0.0.4"
+
+[[package]]
+name = "way"
+version = "0.0.1"
+description = "filesystem tools"
+category = "dev"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[package.dependencies]
+ject = ">=0.0.3,<0.0.4"
 
 [metadata]
-content-hash = "8f382bcdd5b7a2c14f85690c2f810217f86005cd4346a9c0df81b0026808b0e1"
-lock-version = "1.0"
+lock-version = "1.1"
 python-versions = "^3.8"
+content-hash = "3b195a0c8964a95d74798fe68626c7d69eec2e9d32f6e95f6b7a75361c4057aa"
 
 [metadata.files]
 atomicwrites = [
@@ -155,18 +230,35 @@ attrs = [
 ]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+crostab = [
+    {file = "crostab-0.0.8-py3-none-any.whl", hash = "sha256:b32444ddde5988ef9b9ae0e5b033da5d8dd849254590c06c0670a614285537a3"},
+    {file = "crostab-0.0.8.tar.gz", hash = "sha256:86b4a080a7b834f9786f6081a500d3b1882ad846a267042e6b363cde686c0d58"},
+]
+foba = [
+    {file = "foba-0.0.7-py3-none-any.whl", hash = "sha256:244f771b4fb29c8887f7efd24785e7375c2d42bec5956434507ea51d17a05101"},
+    {file = "foba-0.0.7.tar.gz", hash = "sha256:7374ae759a4e91bf3d50ca3d0ac894e6f5a86b900a3ab0f39c22740ce47dc764"},
 ]
 iniconfig = [
-    {file = "iniconfig-1.0.1-py3-none-any.whl", hash = "sha256:80cf40c597eb564e86346103f609d74efce0f6b4d4f30ec8ce9e2c26411ba437"},
-    {file = "iniconfig-1.0.1.tar.gz", hash = "sha256:e5f92f89355a67de0595932a6c6c02ab4afddc6fcdc0bfc5becd0d60884d3f69"},
+    {file = "iniconfig-1.1.1-py2.py3-none-any.whl", hash = "sha256:011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"},
+    {file = "iniconfig-1.1.1.tar.gz", hash = "sha256:bc3af051d7d14b2ee5ef9969666def0cd1a000e121eaea580d4a313df4b37f32"},
 ]
 intype = [
     {file = "intype-0.0.3-py3-none-any.whl", hash = "sha256:5c6b607ed4308c8823a8ee968e0387856626da9f5adc8fb2610ea3b4b2f78397"},
     {file = "intype-0.0.3.tar.gz", hash = "sha256:c6cdd127c4112593ffdea9f04e007d5308a0b3c47783062c0d8dddb87c531ee7"},
 ]
+ject = [
+    {file = "ject-0.0.3-py3-none-any.whl", hash = "sha256:84546456bc0d8e2f4d44333082f6b3ca2e9bcc0e6499e0a5f5db25ac701dde42"},
+    {file = "ject-0.0.3.tar.gz", hash = "sha256:7c72dc613b5c601ee6b0f9d33464753053e92bc7c01833320fab4c53ca5bdd1c"},
+]
 packaging = [
     {file = "packaging-20.4-py2.py3-none-any.whl", hash = "sha256:998416ba6962ae7fbd6596850b80e17859a5753ba17c32284f67bfff33784181"},
     {file = "packaging-20.4.tar.gz", hash = "sha256:4357f74f47b9c12db93624a82154e9b120fa8293699949152b22065d556079f8"},
+]
+palett = [
+    {file = "palett-0.0.10-py3-none-any.whl", hash = "sha256:2c369fdde6f60c6e3f38b91a06cac66859b8fe47063ea566d31b1ca2eb109cff"},
+    {file = "palett-0.0.10.tar.gz", hash = "sha256:3ee98a7fecc1bb214e6b8f030229422b9e75573429609bbae6d658b06001a8f9"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
@@ -180,6 +272,10 @@ pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
     {file = "pyparsing-2.4.7.tar.gz", hash = "sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1"},
 ]
+pyspare = [
+    {file = "pyspare-0.0.7-py3-none-any.whl", hash = "sha256:d48273aab7e23cbef278fdcc82de07b63d4eb42e9d689c379bc8fc822a1efe29"},
+    {file = "pyspare-0.0.7.tar.gz", hash = "sha256:61cee7c021077dc51679ae8394814d7b8b2a2dca4a144fa1db41d58212bbccdc"},
+]
 pytest = [
     {file = "pytest-6.1.1-py3-none-any.whl", hash = "sha256:7a8190790c17d79a11f847fba0b004ee9a8122582ebff4729a082c109e81a4c9"},
     {file = "pytest-6.1.1.tar.gz", hash = "sha256:8f593023c1a0f916110285b6efd7f99db07d59546e3d8c36fc60e2ab05d3be92"},
@@ -189,14 +285,18 @@ six = [
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 texting = [
-    {file = "texting-0.0.10-py3-none-any.whl", hash = "sha256:d6151c0c7dd4aee4d832758810d9918b3572893f753f84e792d4484dc100ee01"},
-    {file = "texting-0.0.10.tar.gz", hash = "sha256:d81870dda70d00c02b05796f49d6e3110fdc00726f4e2074936137108173ef5d"},
+    {file = "texting-0.0.11-py3-none-any.whl", hash = "sha256:6d82209574801e8f9d037278e43a79e3a1e8800d43532e6d191a397c0c866835"},
+    {file = "texting-0.0.11.tar.gz", hash = "sha256:33d85f64b83d4b43f800c5f31792ec42742cc24ed73869ebdf1f2d8e8c30e8c6"},
 ]
 toml = [
     {file = "toml-0.10.1-py2.py3-none-any.whl", hash = "sha256:bda89d5935c2eac546d648028b9901107a595863cb36bae0c73ac804a9b4ce88"},
     {file = "toml-0.10.1.tar.gz", hash = "sha256:926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f"},
 ]
 veho = [
-    {file = "veho-0.0.4-py3-none-any.whl", hash = "sha256:44049086198860b91c9f61668448892aea33a00ca569004662637a2459bad500"},
-    {file = "veho-0.0.4.tar.gz", hash = "sha256:f135254264a3180152591f54ab65e0f575fc7a5e04471bd064deb0cdfdb5d389"},
+    {file = "veho-0.0.9-py3-none-any.whl", hash = "sha256:1249c3ca0143598210934acfd8dd96469e04ecee5d5cf04102c3b33530a1c758"},
+    {file = "veho-0.0.9.tar.gz", hash = "sha256:c77405c0029344297b9c0acdb444391f76669a94ece2febbac7159bef7d223a7"},
+]
+way = [
+    {file = "way-0.0.1-py3-none-any.whl", hash = "sha256:49523a1e16dbea3c58cb0975262b3c08c8965452e089815f52f063c5724f4aa7"},
+    {file = "way-0.0.1.tar.gz", hash = "sha256:4ca55c22ffaf60b97c843aeb3188b8385fa57a100074eabb94b9b8afc701d2b6"},
 ]
