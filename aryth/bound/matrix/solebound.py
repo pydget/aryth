@@ -1,9 +1,9 @@
-from typing import Callable, List, Tuple
+from typing import List
 
 from intype import is_numeric
 from veho.matrix import iso, size
 
-from structs import TagList, Select
+from aryth.structs import TagList, Select
 
 
 def solebound(

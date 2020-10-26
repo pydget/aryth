@@ -1,6 +1,6 @@
 from texting.chars import RT
 
-from aryth.bound_matrix.bound import bound
+from aryth.bound.matrix.bound import bound
 
 paramsList = {
     'row': [[5, 7, 9, 10, 6]],

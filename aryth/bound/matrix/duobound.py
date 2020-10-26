@@ -4,7 +4,7 @@ from intype import has_literal, is_numeric
 from texting.str_value import str_value
 from veho.matrix import iso, size
 
-from structs import Select, TagList
+from aryth.structs import Select, TagList
 
 
 def duobound(

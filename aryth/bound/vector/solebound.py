@@ -1,8 +1,6 @@
-from typing import Callable, Tuple
-
 from intype import is_numeric
 
-from structs import TagList, Select
+from aryth.structs import TagList, Select
 
 
 def solebound(
