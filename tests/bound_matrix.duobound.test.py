@@ -1,4 +1,4 @@
-from texting.chars import RT
+from texting.chars import RT, SP
 
 from aryth.bound.matrix.duobound import duobound
 
@@ -16,7 +16,10 @@ paramsList = {
 
 def test():
     for key, mx in paramsList.items():
-        print(key, RT, duobound(mx))
+        print(key)
+        tagged_x, tagged_y = duobound(mx)
+        print(SP, tagged_x, vars(tagged_x))
+        print(SP, tagged_y, vars(tagged_y))
 
 
 test()

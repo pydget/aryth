@@ -1,4 +1,4 @@
-from texting.chars import RT
+from texting.chars import RT, SP
 
 from aryth.bound.vector.duobound import duobound
 
@@ -16,7 +16,10 @@ paramsList = {
 
 def test():
     for key, vec in paramsList.items():
-        print(key, RT, duobound(vec))
+        tag_list_x, tag_list_y = duobound(vec)
+        print(key)
+        print(SP, tag_list_x, vars(tag_list_x))
+        print(SP, tag_list_y, vars(tag_list_x))
 
 
 test()

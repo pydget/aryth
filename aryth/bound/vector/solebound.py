@@ -2,20 +2,22 @@ from typing import Callable, Tuple
 
 from intype import is_numeric
 
+from structs import TagList, Select
+
 
 def solebound(
         vec: list,
-        opt: Tuple[Callable, Callable or None] = (is_numeric, float)
+        opt: Select = Select(is_numeric, float)
 ):
     size = len(vec)
-    ve, hi, (filter_fn, mapper) = [None] * size, 0, opt
-    ma = mi = None
+    vec, count, when, to = [None] * size, 0, opt.when, opt.to
+    peak = vale = None
     for i, v in enumerate(vec):
-        if filter_fn(v) and (hi := hi + 1):
-            ve[i] = v = mapper(v) if mapper else v
-            if not ma and not mi: ma = mi = v
-            if v > ma:
-                ma = v
-            elif v < mi:
-                mi = v
-    return {'slice': ve, 'min': mi, 'max': ma, 'count': hi}
+        if when(v) and (count := count + 1):
+            vec[i] = v = to(v) if to else v
+            if not peak and not vale: peak = vale = v
+            if v > peak:
+                peak = v
+            elif v < vale:
+                vale = v
+    return TagList(vec, min=vale, max=peak, count=count)

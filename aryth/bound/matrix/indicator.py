@@ -2,7 +2,7 @@ from functools import partial, reduce
 
 from veho.matrix import size
 
-from aryth.bound_vector.indicator import max_by as max_vec_by, min_by as min_vec_by
+from aryth.bound.vector.indicator import max_by as max_vec_by, min_by as min_vec_by
 from aryth.comparison import max_indicate, min_indicate
 
 
