@@ -1,6 +1,6 @@
 from texting.chars import RT
 
-from aryth.bound_vector.bound import bound
+from aryth.bound.vector import bound
 
 paramsList = {
     'one_zero': [0],
