@@ -1,4 +1,4 @@
-from aryth.bound_matrix import min_by
+from aryth.bound.matrix import min_by
 
 li = [
     # [],
