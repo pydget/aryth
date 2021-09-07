@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "aryth"
-version = "0.0.11"
+version = "0.0.12"
 description = "numerical & statistics functions"
 authors = ["Hoyeung Wong <hoyeungw@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/hoyeungw/aryth.git"
-repository = "https://github.com/hoyeungw/aryth.git"
+homepage = "https://github.com/pydget/aryth.git"
+repository = "https://github.com/pydget/aryth.git"
 keywords = [
     "aryth", "numerical", "math", "statistics", "stat",
     "max", "min", "bound",
